@@ -1,0 +1,17 @@
+export const DEFAULT_PROMPTS = [
+  "A futuristic AI robot sitting in a neon-lit cyberpunk café",
+  "Astronaut riding a horse on Mars in cinematic lighting",
+  "Ultra-realistic lion wearing a royal crown, 8K detail",
+  "Cyberpunk city street in Tokyo at night with rain and reflections",
+  "A fantasy castle floating above the clouds at sunset",
+  "Samurai standing in a snowy forest with falling cherry blossoms",
+  "Dreamy anime-style sunset over a magical landscape",
+  "A wizard casting a glowing spell in a dark enchanted forest",
+  "A cozy modern room with warm lighting and aesthetic decor",
+  "A futuristic flying car over a sci-fi city skyline",
+  "A cute panda working on a laptop in a coffee shop",
+  "Viking warrior in detailed armor standing on a battlefield",
+  "A surreal giant whale floating in the sky above a city",
+  "A mystical dragon circling a mountain temple at sunrise",
+  "A space explorer discovering a glowing alien planet",
+];
