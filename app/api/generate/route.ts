@@ -75,3 +75,16 @@ export async function GET() {
     return NextResponse.json({ error: error.message }, { status: 500 });
   }
 }
+
+export async function DELETE(req: Request) {
+  try{
+
+    const session = await getServerSession(authOptions);
+    if(!session?.user?.email){
+      return NextResponse.json({error: "Fadlan soo gal (Sign in) si aad u tirtirto history-ga"}, {status: 401});
+    }
+
+  }catch(){
+
+  }
+}

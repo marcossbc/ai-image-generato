@@ -9,7 +9,7 @@ export default function LoginPage() {
   const { data: session, status } = useSession();
   const router = useRouter();
 
-  // Haddii uu horey u soo galay (Logged in), si toos ah u gee Home Page-ka
+  
   useEffect(() => {
     if (session) {
       router.push("/");
@@ -32,7 +32,6 @@ export default function LoginPage() {
   return (
     <div className="relative flex h-screen w-full bg-[#0f1012] text-[#e3e3e3] items-center justify-center font-sans overflow-hidden selection:bg-blue-500/30">
       
-      {/* Background Glow Lights (Gradients) */}
       <div className="absolute -top-32 -left-32 w-96 h-96 bg-blue-600/20 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute -bottom-32 -right-32 w-96 h-96 bg-purple-600/20 rounded-full blur-[120px] pointer-events-none" />
 

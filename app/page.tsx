@@ -185,7 +185,6 @@ export default function GeminiApp() {
   return (
     <div className="flex h-screen bg-[#0f1012] text-[#e3e3e3] overflow-hidden font-sans selection:bg-blue-500/30 relative">
       
-      {/* Mobile Sidebar Overlay (backdrop) */}
       {sidebarOpen && (
         <div 
           onClick={() => setSidebarOpen(false)}
@@ -193,7 +192,6 @@ export default function GeminiApp() {
         />
       )}
 
-      {/* ================= 1. SIDEBAR (Responsive Gemini Style) ================= */}
       <aside
         className={`fixed md:relative z-40 h-full transition-all duration-300 ease-in-out bg-[#17181a] md:bg-[#17181a]/80 backdrop-blur-xl flex flex-col justify-between p-4 border-r border-[#26272b] ${
           sidebarOpen ? "translate-x-0 w-72" : "-translate-x-full md:translate-x-0 md:w-20"
@@ -300,7 +298,7 @@ export default function GeminiApp() {
         )}
       </aside>
 
-      {/* ================= 2. MAIN BODY AREA ================= */}
+      
       <main className="flex-1 flex flex-col justify-between items-center relative overflow-hidden bg-gradient-to-b from-[#121316] to-[#0f1012] w-full">
         
         {/* Header */}
