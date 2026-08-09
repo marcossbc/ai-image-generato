@@ -81,10 +81,27 @@ export async function DELETE(req: Request) {
 
     const session = await getServerSession(authOptions);
     if(!session?.user?.email){
-      return NextResponse.json({error: "Fadlan soo gal (Sign in) si aad u tirtirto history-ga"}, {status: 401});
+      return NextResponse.json({error: "Unauthorized"}, {status: 401});
     }
 
-  }catch(){
+    const searchParams = new URL(req.url).searchParams;
+    const id = searchParams.get("id");
 
+    if(!id){
+      return NextResponse.json({error: "Generation ID is required"}, {status: 400});
+    }
+    
+    await connectToDB();
+
+    const deletedItem = await Generation.findOneAndDelete({ _id: id, userEmail: session.user.email });
+
+    if(!deletedItem){
+      return NextResponse.json({error: "Generation not found or not authorized"}, {status: 404});
+    }
+
+    return NextResponse.json({ success: true, message: "Deleted successfully" });
+
+  }catch(error: any){
+    return NextResponse.json({error: error.message}, {status: 500});
   }
 }
