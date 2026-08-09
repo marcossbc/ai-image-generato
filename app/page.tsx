@@ -324,7 +324,7 @@ export default function GeminiApp() {
           
           <div className="flex items-center gap-2">
             <span className="px-2.5 py-1 rounded-full text-[10px] sm:text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20 flex items-center gap-1.5">
-              <Zap className="w-3 h-3" /> <span className="hidden sm:inline">FLUX.1 Engine</span><span className="sm:hidden">FLUX.1</span>
+              <Zap className="w-3 h-3" /> <span className="hidden sm:inline">SP.1 Engine</span><span className="sm:hidden">SP.1</span>
             </span>
           </div>
         </header>

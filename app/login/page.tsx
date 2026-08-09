@@ -51,7 +51,7 @@ export default function LoginPage() {
           </h1>
           
           <p className="text-gray-400 text-xs sm:text-sm leading-relaxed max-w-xs mx-auto">
-            Kusoo dhowaw platform-ka samaynta sawirrada AI-ga. Fadlan akoonkaaga Google ku soo gal.
+            Create Google account.
           </p>
         </div>
 
@@ -103,7 +103,7 @@ export default function LoginPage() {
 
         {/* Footer info */}
         <p className="text-[11px] text-gray-500 pt-2 border-t border-[#26272b]">
-          Adoo isticmaalaya app-kan waxay ka dhigan tahay inaad aqbashay Shuruudaha & Nidaamka **SP AI Studio**.
+           Sign in with Google SP AI Studio
         </p>
 
       </div>
