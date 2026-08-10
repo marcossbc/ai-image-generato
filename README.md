@@ -32,6 +32,8 @@ Built with **Next.js App Router**, the application includes secure authenticatio
 ---
 
 ## 📸 Screenshots
+<img src="./screenshits/login.png" alt="AI LOGIN">
+
 
 ### 🔐 Authentication & Login
 
@@ -39,6 +41,7 @@ Secure user authentication powered by **NextAuth.js**.
 
 ### 💬 AI Dashboard & Interactive Studio
 
+<img src="./screenshits/dashbourd.png" alt="AI Dashboard">
 The main workspace for AI media generation, prompt customization, AI chat, and real-time previews.
 
 ---
@@ -128,13 +131,13 @@ The main workspace for AI media generation, prompt customization, AI chat, and r
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/YOUR-PROJECT-NAME.git
+git clone https://github.com/marcossbc/ai-image-generato.git
 ```
 
 ### 2. Navigate to the Project
 
 ```bash
-cd YOUR-PROJECT-NAME
+cd ai-image-generato
 ```
 
 ### 3. Install Dependencies
@@ -187,9 +190,6 @@ To enable Google authentication:
 3. Select **Web Application**.
 4. Add the following authorized redirect URI:
 
-```text
-http://localhost:3000/api/auth/callback/google
-```
 
 5. Add your Google credentials to `.env.local`.
 
@@ -251,7 +251,7 @@ AI-Content-Media-Generator/
 * 🎬 Improved AI video generation
 * 💳 Subscription system
 * 📊 Usage analytics
-
+* Inshalah🙄
 ---
 
 ## 📜 License
