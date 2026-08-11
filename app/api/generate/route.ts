@@ -11,7 +11,6 @@ const ratioMap: Record<string, { width: number; height: number }> = {
   "9:16": { width: 576, height: 1024 },
 };
 
-// 1. POST: Kaliya Ku Kaydi User-ka Logged-in ah Email-kiisa
 export async function POST(req: Request) {
   try {
     const session = await getServerSession(authOptions);
@@ -44,7 +43,7 @@ export async function POST(req: Request) {
 
     await connectToDB();
     const newGeneration = await Generation.create({
-      userEmail: session.user.email, // Save User Email
+      userEmail: session.user.email, 
       prompt,
       images,
       ratio,
@@ -56,7 +55,6 @@ export async function POST(req: Request) {
   }
 }
 
-// 2. GET: Soo Jiid KALIYA History-ga User-kan gaarka ah
 export async function GET() {
   try {
     const session = await getServerSession(authOptions);
@@ -65,7 +63,6 @@ export async function GET() {
     }
 
     await connectToDB();
-    // Miir (Filter): Kaliya ka soo hel database-ka kuwo ka mid ah userEmail-kiisa!
     const history = await Generation.find({ userEmail: session.user.email })
       .sort({ createdAt: -1 })
       .limit(30);
